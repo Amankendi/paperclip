@@ -85,3 +85,15 @@ test-results/
 
 # Local native Runner test/session state
 .paperclip-runner-prp/
+
+# ALKENDI security baseline: local secrets and recovery bundles
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+!.env.*.sample
+!.env.*.template
+*.bundle
+__pycache__/

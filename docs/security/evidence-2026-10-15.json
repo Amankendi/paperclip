@@ -1,0 +1,2709 @@
+{
+  "repository": "Amankendi/paperclip",
+  "source_base": "e733bddc45e00efb1819fffa8677f7b0d07802c5",
+  "settings_observed_at": "2026-10-15T13:52:25.543055+00:00",
+  "settings": {
+    "deploy_keys": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "branch": {
+      "status": "PASS",
+      "data": {
+        "name": "master",
+        "sha": "e733bddc45e00efb1819fffa8677f7b0d07802c5",
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        }
+      }
+    },
+    "branch_protection": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "rulesets": {
+      "status": "PASS",
+      "data": []
+    },
+    "actions_permissions": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "workflow_permissions": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "fork_approval": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "dependabot_alerts": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "secret_scanning_alerts": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "code_scanning_alerts": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    }
+  },
+  "collaborator_role_counts": {
+    "admin": 1
+  },
+  "original_secret_scan": {
+    "repository": "Amankendi/paperclip",
+    "scanner": "gitleaks 8.30.1",
+    "binary_sha256": "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb",
+    "scope": "all locally mirrored Git refs, including fetched PR refs",
+    "exit_code": 1,
+    "status": "FAIL",
+    "findings": [
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/architecture/runner-rich-acp-validation-2026-09-30.json",
+        "StartLine": 768,
+        "EndLine": 768,
+        "Commit": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0",
+        "Fingerprint": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0:doc/architecture/runner-rich-acp-validation-2026-09-30.json:generic-api-key:768",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "packages/paperclip-runner/src/drivers/acpx/copilot-tool-evidence.test.ts",
+        "StartLine": 96,
+        "EndLine": 96,
+        "Commit": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0",
+        "Fingerprint": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0:packages/paperclip-runner/src/drivers/acpx/copilot-tool-evidence.test.ts:generic-api-key:96",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "packages/paperclip-runner/test/fixtures/copilot-product-v3-question-2026-09-29.json",
+        "StartLine": 75,
+        "EndLine": 75,
+        "Commit": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0",
+        "Fingerprint": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0:packages/paperclip-runner/test/fixtures/copilot-product-v3-question-2026-09-29.json:generic-api-key:75",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "jwt",
+        "File": "server/src/__tests__/redaction.test.ts",
+        "StartLine": 71,
+        "EndLine": 71,
+        "Commit": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0",
+        "Fingerprint": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0:server/src/__tests__/redaction.test.ts:jwt:71",
+        "Description": "Uncovered a JSON Web Token, which may lead to unauthorized access to web applications and sensitive user data."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 226,
+        "EndLine": 226,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:226",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 242,
+        "EndLine": 242,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:242",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 258,
+        "EndLine": 258,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:258",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 274,
+        "EndLine": 274,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:274",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 289,
+        "EndLine": 289,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:289",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 304,
+        "EndLine": 304,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:304",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 334,
+        "EndLine": 334,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:334",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 349,
+        "EndLine": 349,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:349",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 419,
+        "EndLine": 419,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:419",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 433,
+        "EndLine": 433,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:433",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 449,
+        "EndLine": 449,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:449",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 463,
+        "EndLine": 463,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:463",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 479,
+        "EndLine": 479,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:479",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 493,
+        "EndLine": 493,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:493",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 507,
+        "EndLine": 507,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:507",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "StartLine": 909,
+        "EndLine": 909,
+        "Commit": "d66acb7ac157c3db2e1d389de4513a7809977725",
+        "Fingerprint": "d66acb7ac157c3db2e1d389de4513a7809977725:server/src/services/connectors/slack/evals/2026-10-08-evidence.json:generic-api-key:909",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "StartLine": 2620,
+        "EndLine": 2620,
+        "Commit": "a590ab769d32be6e8912de1ac169eb7bdc398fb7",
+        "Fingerprint": "a590ab769d32be6e8912de1ac169eb7bdc398fb7:packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs:private-key:2620",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "StartLine": 2654,
+        "EndLine": 2654,
+        "Commit": "a590ab769d32be6e8912de1ac169eb7bdc398fb7",
+        "Fingerprint": "a590ab769d32be6e8912de1ac169eb7bdc398fb7:packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs:private-key:2654",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/src/contracts/provider-trace-file-sink.test.ts",
+        "StartLine": 22,
+        "EndLine": 22,
+        "Commit": "a590ab769d32be6e8912de1ac169eb7bdc398fb7",
+        "Fingerprint": "a590ab769d32be6e8912de1ac169eb7bdc398fb7:packages/paperclip-runner/src/contracts/provider-trace-file-sink.test.ts:private-key:22",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 84,
+        "EndLine": 84,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:84",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 249,
+        "EndLine": 249,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:249",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 466,
+        "EndLine": 466,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:466",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 511,
+        "EndLine": 511,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:511",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 728,
+        "EndLine": 728,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:728",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 889,
+        "EndLine": 889,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:889",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 1106,
+        "EndLine": 1106,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:1106",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 1267,
+        "EndLine": 1267,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:1267",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 1432,
+        "EndLine": 1432,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:1432",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 1649,
+        "EndLine": 1649,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:1649",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "StartLine": 1814,
+        "EndLine": 1814,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-readiness-v4.json:generic-api-key:1814",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 233,
+        "EndLine": 233,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:233",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 444,
+        "EndLine": 444,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:444",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 599,
+        "EndLine": 599,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:599",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 810,
+        "EndLine": 810,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:810",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 969,
+        "EndLine": 969,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:969",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 1030,
+        "EndLine": 1030,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:1030",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 1065,
+        "EndLine": 1065,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:1065",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 1104,
+        "EndLine": 1104,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:1104",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 1315,
+        "EndLine": 1315,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:1315",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 1470,
+        "EndLine": 1470,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:1470",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 1700,
+        "EndLine": 1700,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:1700",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 1911,
+        "EndLine": 1911,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:1911",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 2066,
+        "EndLine": 2066,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:2066",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 2277,
+        "EndLine": 2277,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:2277",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 2436,
+        "EndLine": 2436,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:2436",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 2647,
+        "EndLine": 2647,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:2647",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 2802,
+        "EndLine": 2802,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:2802",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 3013,
+        "EndLine": 3013,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:3013",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 3052,
+        "EndLine": 3052,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:3052",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 3263,
+        "EndLine": 3263,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:3263",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 3422,
+        "EndLine": 3422,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:3422",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "StartLine": 3525,
+        "EndLine": 3525,
+        "Commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47",
+        "Fingerprint": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47:doc/plans/2026-10-05-native-procedure-comparison.json:generic-api-key:3525",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json",
+        "StartLine": 226,
+        "EndLine": 226,
+        "Commit": "78e003449827540175e2441c05bac9eeec8dae98",
+        "Fingerprint": "78e003449827540175e2441c05bac9eeec8dae98:doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json:generic-api-key:226",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json",
+        "StartLine": 421,
+        "EndLine": 421,
+        "Commit": "78e003449827540175e2441c05bac9eeec8dae98",
+        "Fingerprint": "78e003449827540175e2441c05bac9eeec8dae98:doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json:generic-api-key:421",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json",
+        "StartLine": 616,
+        "EndLine": 616,
+        "Commit": "78e003449827540175e2441c05bac9eeec8dae98",
+        "Fingerprint": "78e003449827540175e2441c05bac9eeec8dae98:doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json:generic-api-key:616",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json",
+        "StartLine": 811,
+        "EndLine": 811,
+        "Commit": "78e003449827540175e2441c05bac9eeec8dae98",
+        "Fingerprint": "78e003449827540175e2441c05bac9eeec8dae98:doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json:generic-api-key:811",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-02-hiring-executable-accounting-replay.json",
+        "StartLine": 205,
+        "EndLine": 205,
+        "Commit": "78e003449827540175e2441c05bac9eeec8dae98",
+        "Fingerprint": "78e003449827540175e2441c05bac9eeec8dae98:doc/plans/2026-10-02-hiring-executable-accounting-replay.json:generic-api-key:205",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-02-hiring-executable-accounting-replay.json",
+        "StartLine": 382,
+        "EndLine": 382,
+        "Commit": "78e003449827540175e2441c05bac9eeec8dae98",
+        "Fingerprint": "78e003449827540175e2441c05bac9eeec8dae98:doc/plans/2026-10-02-hiring-executable-accounting-replay.json:generic-api-key:382",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-02-hiring-executable-accounting-replay.json",
+        "StartLine": 559,
+        "EndLine": 559,
+        "Commit": "78e003449827540175e2441c05bac9eeec8dae98",
+        "Fingerprint": "78e003449827540175e2441c05bac9eeec8dae98:doc/plans/2026-10-02-hiring-executable-accounting-replay.json:generic-api-key:559",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/2026-10-02-hiring-executable-accounting-replay.json",
+        "StartLine": 736,
+        "EndLine": 736,
+        "Commit": "78e003449827540175e2441c05bac9eeec8dae98",
+        "Fingerprint": "78e003449827540175e2441c05bac9eeec8dae98:doc/plans/2026-10-02-hiring-executable-accounting-replay.json:generic-api-key:736",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "jwt",
+        "File": "server/src/__tests__/remote-mcp-redaction.test.ts",
+        "StartLine": 16,
+        "EndLine": 16,
+        "Commit": "e8c8ba3c19c7e0fbd5ae138cb28684e283c04e36",
+        "Fingerprint": "e8c8ba3c19c7e0fbd5ae138cb28684e283c04e36:server/src/__tests__/remote-mcp-redaction.test.ts:jwt:16",
+        "Description": "Uncovered a JSON Web Token, which may lead to unauthorized access to web applications and sensitive user data."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "server/src/__tests__/railway-ssh.test.ts",
+        "StartLine": 12,
+        "EndLine": 28,
+        "Commit": "6fe8e306251cd3d59d0fa7b9cf6b3e0aae362a54",
+        "Fingerprint": "6fe8e306251cd3d59d0fa7b9cf6b3e0aae362a54:server/src/__tests__/railway-ssh.test.ts:private-key:12",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "curl-auth-header",
+        "File": "tests/runner-e2e/first-task.test.ts",
+        "StartLine": 931,
+        "EndLine": 931,
+        "Commit": "11921075a4462cb27032512ff8736e572402e9f7",
+        "Fingerprint": "11921075a4462cb27032512ff8736e572402e9f7:tests/runner-e2e/first-task.test.ts:curl-auth-header:931",
+        "Description": "Discovered a potential authorization token provided in a curl command header, which could compromise the curl accessed resource."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "tests/e2e/chat-adapters-ui.shared.ts",
+        "StartLine": 23,
+        "EndLine": 25,
+        "Commit": "d08abcba15233de375a655d21d743022d7842e94",
+        "Fingerprint": "d08abcba15233de375a655d21d743022d7842e94:tests/e2e/chat-adapters-ui.shared.ts:private-key:23",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "jwt",
+        "File": "server/src/services/__tests__/run-failure-report.test.ts",
+        "StartLine": 187,
+        "EndLine": 187,
+        "Commit": "c276d3fdc3f46c547e4ca9225b5aa822764a5e0b",
+        "Fingerprint": "c276d3fdc3f46c547e4ca9225b5aa822764a5e0b:server/src/services/__tests__/run-failure-report.test.ts:jwt:187",
+        "Description": "Uncovered a JSON Web Token, which may lead to unauthorized access to web applications and sensitive user data."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/tests/acpx_sidecar_transport.rs",
+        "StartLine": 191,
+        "EndLine": 191,
+        "Commit": "ab15aff390c9bbb0495cd93603adeaf118242a3d",
+        "Fingerprint": "ab15aff390c9bbb0495cd93603adeaf118242a3d:packages/paperclip-runner/runner/crates/runner-core/tests/acpx_sidecar_transport.rs:generic-api-key:191",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/chat-adapters/2026-09-08-github-private-attachment-authority.md",
+        "StartLine": 107,
+        "EndLine": 107,
+        "Commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d",
+        "Fingerprint": "889947c238c088a09c39d2783bc5e3521a8d1d8d:doc/plans/chat-adapters/2026-09-08-github-private-attachment-authority.md:generic-api-key:107",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/plans/chat-adapters/2026-09-08-chat-queue-and-webhook-repair.md",
+        "StartLine": 6669,
+        "EndLine": 6669,
+        "Commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d",
+        "Fingerprint": "889947c238c088a09c39d2783bc5e3521a8d1d8d:doc/plans/chat-adapters/2026-09-08-chat-queue-and-webhook-repair.md:generic-api-key:6669",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "discord-api-token",
+        "File": "doc/plans/chat-adapters/2026-09-08-chat-queue-and-webhook-repair.md",
+        "StartLine": 3585,
+        "EndLine": 3585,
+        "Commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d",
+        "Fingerprint": "889947c238c088a09c39d2783bc5e3521a8d1d8d:doc/plans/chat-adapters/2026-09-08-chat-queue-and-webhook-repair.md:discord-api-token:3585",
+        "Description": "Detected a Discord API key, potentially compromising communication channels and user data privacy on Discord."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/http-log-redaction.test.ts",
+        "StartLine": 537,
+        "EndLine": 537,
+        "Commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d",
+        "Fingerprint": "889947c238c088a09c39d2783bc5e3521a8d1d8d:server/src/__tests__/http-log-redaction.test.ts:generic-api-key:537",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/http-log-redaction.test.ts",
+        "StartLine": 539,
+        "EndLine": 539,
+        "Commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d",
+        "Fingerprint": "889947c238c088a09c39d2783bc5e3521a8d1d8d:server/src/__tests__/http-log-redaction.test.ts:generic-api-key:539",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/redact-sensitive.test.ts",
+        "StartLine": 13,
+        "EndLine": 13,
+        "Commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d",
+        "Fingerprint": "889947c238c088a09c39d2783bc5e3521a8d1d8d:server/src/__tests__/redact-sensitive.test.ts:generic-api-key:13",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "tests/e2e/chat-adapters-ui.spec.ts",
+        "StartLine": 23,
+        "EndLine": 25,
+        "Commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d",
+        "Fingerprint": "889947c238c088a09c39d2783bc5e3521a8d1d8d:tests/e2e/chat-adapters-ui.spec.ts:private-key:23",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "packages/paperclip-runner/src/drivers/opencode/opencode-server-driver.test.ts",
+        "StartLine": 57,
+        "EndLine": 57,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:packages/paperclip-runner/src/drivers/opencode/opencode-server-driver.test.ts:generic-api-key:57",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "packages/paperclip-runner/src/live/runnerd-codex-transport.test.ts",
+        "StartLine": 809,
+        "EndLine": 809,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:packages/paperclip-runner/src/live/runnerd-codex-transport.test.ts:generic-api-key:809",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "StartLine": 2322,
+        "EndLine": 2324,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs:private-key:2322",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "StartLine": 2333,
+        "EndLine": 2335,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs:private-key:2333",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "StartLine": 2343,
+        "EndLine": 2345,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs:private-key:2343",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "StartLine": 2353,
+        "EndLine": 2355,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs:private-key:2353",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "StartLine": 2322,
+        "EndLine": 2324,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs:private-key:2322",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "StartLine": 2333,
+        "EndLine": 2335,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs:private-key:2333",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "StartLine": 2343,
+        "EndLine": 2345,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs:private-key:2343",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "StartLine": 2353,
+        "EndLine": 2355,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs:private-key:2353",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "jwt",
+        "File": "server/src/__tests__/redaction.test.ts",
+        "StartLine": 101,
+        "EndLine": 101,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:server/src/__tests__/redaction.test.ts:jwt:101",
+        "Description": "Uncovered a JSON Web Token, which may lead to unauthorized access to web applications and sensitive user data."
+      },
+      {
+        "RuleID": "jwt",
+        "File": "server/src/__tests__/redaction.test.ts",
+        "StartLine": 340,
+        "EndLine": 340,
+        "Commit": "0f9452101740835ce0b1488a204bf48acd5bafc3",
+        "Fingerprint": "0f9452101740835ce0b1488a204bf48acd5bafc3:server/src/__tests__/redaction.test.ts:jwt:340",
+        "Description": "Uncovered a JSON Web Token, which may lead to unauthorized access to web applications and sensitive user data."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "packages/paperclip-runner/src/live/runnerd-codex-transport.test.ts",
+        "StartLine": 491,
+        "EndLine": 491,
+        "Commit": "560e7e48b5f8db2a64237ff6908dff57f23bbabd",
+        "Fingerprint": "560e7e48b5f8db2a64237ff6908dff57f23bbabd:packages/paperclip-runner/src/live/runnerd-codex-transport.test.ts:generic-api-key:491",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "jwt",
+        "File": "server/src/__tests__/redaction.test.ts",
+        "StartLine": 48,
+        "EndLine": 48,
+        "Commit": "25cf079ec54ec619882f30c3d862a9370827be05",
+        "Fingerprint": "25cf079ec54ec619882f30c3d862a9370827be05:server/src/__tests__/redaction.test.ts:jwt:48",
+        "Description": "Uncovered a JSON Web Token, which may lead to unauthorized access to web applications and sensitive user data."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "packages/paperclip-runner/src/drivers/opencode/opencode-server-driver.test.ts",
+        "StartLine": 39,
+        "EndLine": 39,
+        "Commit": "2e5a24e17769f206fb350a719bf7c85eadb348c7",
+        "Fingerprint": "2e5a24e17769f206fb350a719bf7c85eadb348c7:packages/paperclip-runner/src/drivers/opencode/opencode-server-driver.test.ts:generic-api-key:39",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "packages/paperclip-runner/src/tools/capability-semantic-tools.test.ts",
+        "StartLine": 1841,
+        "EndLine": 1841,
+        "Commit": "ea86e780af658b13d804f7908a15c0a60d293e91",
+        "Fingerprint": "ea86e780af658b13d804f7908a15c0a60d293e91:packages/paperclip-runner/src/tools/capability-semantic-tools.test.ts:generic-api-key:1841",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "ui/src/pages/apps/gateways/ConnectClientDialog.test.tsx",
+        "StartLine": 75,
+        "EndLine": 75,
+        "Commit": "b51112798f1794776adf837982be58d231d5ac3d",
+        "Fingerprint": "b51112798f1794776adf837982be58d231d5ac3d:ui/src/pages/apps/gateways/ConnectClientDialog.test.tsx:generic-api-key:75",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "packages/paperclip-runner/src/control-plane/durable-prp-control-plane.test.ts",
+        "StartLine": 170,
+        "EndLine": 170,
+        "Commit": "9964b034bbff24e700c8eccf5a8b1fc3daa44bf2",
+        "Fingerprint": "9964b034bbff24e700c8eccf5a8b1fc3daa44bf2:packages/paperclip-runner/src/control-plane/durable-prp-control-plane.test.ts:generic-api-key:170",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/decisions-service.test.ts",
+        "StartLine": 44,
+        "EndLine": 44,
+        "Commit": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7",
+        "Fingerprint": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7:server/src/__tests__/decisions-service.test.ts:generic-api-key:44",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/server-startup-feedback-export.test.ts",
+        "StartLine": 289,
+        "EndLine": 289,
+        "Commit": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7",
+        "Fingerprint": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7:server/src/__tests__/server-startup-feedback-export.test.ts:generic-api-key:289",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/server-startup-feedback-export.test.ts",
+        "StartLine": 290,
+        "EndLine": 290,
+        "Commit": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7",
+        "Fingerprint": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7:server/src/__tests__/server-startup-feedback-export.test.ts:generic-api-key:290",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/server-startup-feedback-export.test.ts",
+        "StartLine": 406,
+        "EndLine": 406,
+        "Commit": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7",
+        "Fingerprint": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7:server/src/__tests__/server-startup-feedback-export.test.ts:generic-api-key:406",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/server-startup-feedback-export.test.ts",
+        "StartLine": 453,
+        "EndLine": 453,
+        "Commit": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7",
+        "Fingerprint": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7:server/src/__tests__/server-startup-feedback-export.test.ts:generic-api-key:453",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "ui/src/pages/apps/gateways/gateway-helpers.test.ts",
+        "StartLine": 112,
+        "EndLine": 112,
+        "Commit": "f712cedbc2e0c86ffa606018609831167641766a",
+        "Fingerprint": "f712cedbc2e0c86ffa606018609831167641766a:ui/src/pages/apps/gateways/gateway-helpers.test.ts:generic-api-key:112",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "ui/src/pages/apps/gateways/panels/TokensPanel.test.tsx",
+        "StartLine": 52,
+        "EndLine": 52,
+        "Commit": "f712cedbc2e0c86ffa606018609831167641766a",
+        "Fingerprint": "f712cedbc2e0c86ffa606018609831167641766a:ui/src/pages/apps/gateways/panels/TokensPanel.test.tsx:generic-api-key:52",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/tool-gateway.test.ts",
+        "StartLine": 2072,
+        "EndLine": 2072,
+        "Commit": "931eec3fbf83dc425b5381ba5823125162cd13e7",
+        "Fingerprint": "931eec3fbf83dc425b5381ba5823125162cd13e7:server/src/__tests__/tool-gateway.test.ts:generic-api-key:2072",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/google-sheets-mcp-server/src/http.test.ts",
+        "StartLine": 26,
+        "EndLine": 29,
+        "Commit": "7b35de65aaabbd53c2393cdf10c2223e36af1c23",
+        "Fingerprint": "7b35de65aaabbd53c2393cdf10c2223e36af1c23:packages/google-sheets-mcp-server/src/http.test.ts:private-key:26",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/google-sheets-mcp-server/src/server.test.ts",
+        "StartLine": 25,
+        "EndLine": 28,
+        "Commit": "7b35de65aaabbd53c2393cdf10c2223e36af1c23",
+        "Fingerprint": "7b35de65aaabbd53c2393cdf10c2223e36af1c23:packages/google-sheets-mcp-server/src/server.test.ts:private-key:25",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/environment-custom-images-service.test.ts",
+        "StartLine": 456,
+        "EndLine": 456,
+        "Commit": "8d9f9fd24086a3ae8ee7edc83f8368084be81277",
+        "Fingerprint": "8d9f9fd24086a3ae8ee7edc83f8368084be81277:server/src/__tests__/environment-custom-images-service.test.ts:generic-api-key:456",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/invite-accept-gateway-defaults.test.ts",
+        "StartLine": 203,
+        "EndLine": 203,
+        "Commit": "d77fab6aae3146ab5957c4d4d54d634f22545707",
+        "Fingerprint": "d77fab6aae3146ab5957c4d4d54d634f22545707:server/src/__tests__/invite-accept-gateway-defaults.test.ts:generic-api-key:203",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/invite-accept-gateway-defaults.test.ts",
+        "StartLine": 233,
+        "EndLine": 233,
+        "Commit": "d77fab6aae3146ab5957c4d4d54d634f22545707",
+        "Fingerprint": "d77fab6aae3146ab5957c4d4d54d634f22545707:server/src/__tests__/invite-accept-gateway-defaults.test.ts:generic-api-key:233",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/invite-accept-gateway-defaults.test.ts",
+        "StartLine": 155,
+        "EndLine": 155,
+        "Commit": "fd2f82ac5bba6ce2db0c5d17c573733af5f2bbb8",
+        "Fingerprint": "fd2f82ac5bba6ce2db0c5d17c573733af5f2bbb8:server/src/__tests__/invite-accept-gateway-defaults.test.ts:generic-api-key:155",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/invite-accept-gateway-defaults.test.ts",
+        "StartLine": 178,
+        "EndLine": 178,
+        "Commit": "fd2f82ac5bba6ce2db0c5d17c573733af5f2bbb8",
+        "Fingerprint": "fd2f82ac5bba6ce2db0c5d17c573733af5f2bbb8:server/src/__tests__/invite-accept-gateway-defaults.test.ts:generic-api-key:178",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "curl-auth-header",
+        "File": "scripts/smoke/hermes-gateway-e2e.sh",
+        "StartLine": 610,
+        "EndLine": 610,
+        "Commit": "fd2f82ac5bba6ce2db0c5d17c573733af5f2bbb8",
+        "Fingerprint": "fd2f82ac5bba6ce2db0c5d17c573733af5f2bbb8:scripts/smoke/hermes-gateway-e2e.sh:curl-auth-header:610",
+        "Description": "Discovered a potential authorization token provided in a curl command header, which could compromise the curl accessed resource."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/redact-sensitive.test.ts",
+        "StartLine": 6,
+        "EndLine": 6,
+        "Commit": "bb7978327ed568bf012f6efe16fd200e8baa3a5c",
+        "Fingerprint": "bb7978327ed568bf012f6efe16fd200e8baa3a5c:server/src/__tests__/redact-sensitive.test.ts:generic-api-key:6",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/company-artifacts-service.test.ts",
+        "StartLine": 232,
+        "EndLine": 232,
+        "Commit": "4693d770aab4ec8342833cfed78dd4ac43c49f7a",
+        "Fingerprint": "4693d770aab4ec8342833cfed78dd4ac43c49f7a:server/src/__tests__/company-artifacts-service.test.ts:generic-api-key:232",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/logs/2026-05-24-cli-api-parity-e2e-log.md",
+        "StartLine": 34,
+        "EndLine": 34,
+        "Commit": "70b1a9109d756818fb448beafa67af27babb52de",
+        "Fingerprint": "70b1a9109d756818fb448beafa67af27babb52de:doc/logs/2026-05-24-cli-api-parity-e2e-log.md:generic-api-key:34",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "doc/logs/2026-05-24-cli-api-parity-e2e-log.md",
+        "StartLine": 35,
+        "EndLine": 35,
+        "Commit": "70b1a9109d756818fb448beafa67af27babb52de",
+        "Fingerprint": "70b1a9109d756818fb448beafa67af27babb52de:doc/logs/2026-05-24-cli-api-parity-e2e-log.md:generic-api-key:35",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/plugins/sandbox-providers/exe-dev/src/plugin.test.ts",
+        "StartLine": 170,
+        "EndLine": 176,
+        "Commit": "aea35fe695672061918af10e5493c9d890e44d13",
+        "Fingerprint": "aea35fe695672061918af10e5493c9d890e44d13:packages/plugins/sandbox-providers/exe-dev/src/plugin.test.ts:private-key:170",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/plugins/sandbox-providers/exe-dev/src/plugin.test.ts",
+        "StartLine": 179,
+        "EndLine": 185,
+        "Commit": "aea35fe695672061918af10e5493c9d890e44d13",
+        "Fingerprint": "aea35fe695672061918af10e5493c9d890e44d13:packages/plugins/sandbox-providers/exe-dev/src/plugin.test.ts:private-key:179",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/plugins/sandbox-providers/exe-dev/src/plugin.test.ts",
+        "StartLine": 246,
+        "EndLine": 248,
+        "Commit": "aea35fe695672061918af10e5493c9d890e44d13",
+        "Fingerprint": "aea35fe695672061918af10e5493c9d890e44d13:packages/plugins/sandbox-providers/exe-dev/src/plugin.test.ts:private-key:246",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "private-key",
+        "File": "packages/plugins/sandbox-providers/exe-dev/src/plugin.ts",
+        "StartLine": 170,
+        "EndLine": 173,
+        "Commit": "aea35fe695672061918af10e5493c9d890e44d13",
+        "Fingerprint": "aea35fe695672061918af10e5493c9d890e44d13:packages/plugins/sandbox-providers/exe-dev/src/plugin.ts:private-key:170",
+        "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/secrets-service.test.ts",
+        "StartLine": 997,
+        "EndLine": 997,
+        "Commit": "778e775c35834aabe09266fb6d415d3dafbd1deb",
+        "Fingerprint": "778e775c35834aabe09266fb6d415d3dafbd1deb:server/src/__tests__/secrets-service.test.ts:generic-api-key:997",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "server/src/__tests__/secrets-service.test.ts",
+        "StartLine": 1113,
+        "EndLine": 1113,
+        "Commit": "778e775c35834aabe09266fb6d415d3dafbd1deb",
+        "Fingerprint": "778e775c35834aabe09266fb6d415d3dafbd1deb:server/src/__tests__/secrets-service.test.ts:generic-api-key:1113",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "jwt",
+        "File": "server/src/__tests__/redaction.test.ts",
+        "StartLine": 68,
+        "EndLine": 68,
+        "Commit": "5a0c1979cf439d434c527de4935687a178be4b8e",
+        "Fingerprint": "5a0c1979cf439d434c527de4935687a178be4b8e:server/src/__tests__/redaction.test.ts:jwt:68",
+        "Description": "Uncovered a JSON Web Token, which may lead to unauthorized access to web applications and sensitive user data."
+      },
+      {
+        "RuleID": "jwt",
+        "File": "server/src/__tests__/heartbeat-active-run-output-watchdog.test.ts",
+        "StartLine": 220,
+        "EndLine": 220,
+        "Commit": "5a0c1979cf439d434c527de4935687a178be4b8e",
+        "Fingerprint": "5a0c1979cf439d434c527de4935687a178be4b8e:server/src/__tests__/heartbeat-active-run-output-watchdog.test.ts:jwt:220",
+        "Description": "Uncovered a JSON Web Token, which may lead to unauthorized access to web applications and sensitive user data."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "docs/deploy/secrets.md",
+        "StartLine": 76,
+        "EndLine": 76,
+        "Commit": "09d2ef1a37c9097b983a9705ff30f5c2225fc880",
+        "Fingerprint": "09d2ef1a37c9097b983a9705ff30f5c2225fc880:docs/deploy/secrets.md:generic-api-key:76",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      },
+      {
+        "RuleID": "generic-api-key",
+        "File": "docs/deploy/secrets.md",
+        "StartLine": 78,
+        "EndLine": 78,
+        "Commit": "02dc46e78214083acebba040e9b57833596add9d",
+        "Fingerprint": "02dc46e78214083acebba040e9b57833596add9d:docs/deploy/secrets.md:generic-api-key:78",
+        "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+      }
+    ]
+  },
+  "proposed_secret_gate": {
+    "check": "gitleaks-history",
+    "version": "8.30.1",
+    "exit_code": 1,
+    "status": "FAIL",
+    "candidate_count": 125,
+    "candidates": [
+      {
+        "rule": "generic-api-key",
+        "file": "doc/architecture/runner-rich-acp-validation-2026-09-30.json",
+        "line": 768,
+        "commit": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "packages/paperclip-runner/src/drivers/acpx/copilot-tool-evidence.test.ts",
+        "line": 96,
+        "commit": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "packages/paperclip-runner/test/fixtures/copilot-product-v3-question-2026-09-29.json",
+        "line": 75,
+        "commit": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0"
+      },
+      {
+        "rule": "jwt",
+        "file": "server/src/__tests__/redaction.test.ts",
+        "line": 71,
+        "commit": "57e977be72f37dcf31acff64b3e5dcbb64a92cd0"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 226,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 242,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 258,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 274,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 289,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 304,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 334,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 349,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 419,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 433,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 449,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 463,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 479,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 493,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 507,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/services/connectors/slack/evals/2026-10-08-evidence.json",
+        "line": 909,
+        "commit": "d66acb7ac157c3db2e1d389de4513a7809977725"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "line": 2620,
+        "commit": "a590ab769d32be6e8912de1ac169eb7bdc398fb7"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "line": 2654,
+        "commit": "a590ab769d32be6e8912de1ac169eb7bdc398fb7"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/src/contracts/provider-trace-file-sink.test.ts",
+        "line": 22,
+        "commit": "a590ab769d32be6e8912de1ac169eb7bdc398fb7"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 84,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 249,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 466,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 511,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 728,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 889,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 1106,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 1267,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 1432,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 1649,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-readiness-v4.json",
+        "line": 1814,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 233,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 444,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 599,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 810,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 969,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 1030,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 1065,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 1104,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 1315,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 1470,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 1700,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 1911,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 2066,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 2277,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 2436,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 2647,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 2802,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 3013,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 3052,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 3263,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 3422,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-05-native-procedure-comparison.json",
+        "line": 3525,
+        "commit": "72ff3a9f27e581a27acb49771e8658bbb0bbaa47"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-02-hiring-executable-accounting-replay.json",
+        "line": 205,
+        "commit": "78e003449827540175e2441c05bac9eeec8dae98"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-02-hiring-executable-accounting-replay.json",
+        "line": 382,
+        "commit": "78e003449827540175e2441c05bac9eeec8dae98"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-02-hiring-executable-accounting-replay.json",
+        "line": 559,
+        "commit": "78e003449827540175e2441c05bac9eeec8dae98"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-02-hiring-executable-accounting-replay.json",
+        "line": 736,
+        "commit": "78e003449827540175e2441c05bac9eeec8dae98"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json",
+        "line": 226,
+        "commit": "78e003449827540175e2441c05bac9eeec8dae98"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json",
+        "line": 421,
+        "commit": "78e003449827540175e2441c05bac9eeec8dae98"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json",
+        "line": 616,
+        "commit": "78e003449827540175e2441c05bac9eeec8dae98"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/2026-10-02-hiring-executable-accounting-replay.v2.json",
+        "line": 811,
+        "commit": "78e003449827540175e2441c05bac9eeec8dae98"
+      },
+      {
+        "rule": "jwt",
+        "file": "server/src/__tests__/remote-mcp-redaction.test.ts",
+        "line": 16,
+        "commit": "e8c8ba3c19c7e0fbd5ae138cb28684e283c04e36"
+      },
+      {
+        "rule": "private-key",
+        "file": "server/src/__tests__/railway-ssh.test.ts",
+        "line": 12,
+        "commit": "6fe8e306251cd3d59d0fa7b9cf6b3e0aae362a54"
+      },
+      {
+        "rule": "curl-auth-header",
+        "file": "tests/runner-e2e/first-task.test.ts",
+        "line": 931,
+        "commit": "11921075a4462cb27032512ff8736e572402e9f7"
+      },
+      {
+        "rule": "private-key",
+        "file": "tests/e2e/chat-adapters-ui.shared.ts",
+        "line": 23,
+        "commit": "d08abcba15233de375a655d21d743022d7842e94"
+      },
+      {
+        "rule": "jwt",
+        "file": "server/src/services/__tests__/run-failure-report.test.ts",
+        "line": 187,
+        "commit": "c276d3fdc3f46c547e4ca9225b5aa822764a5e0b"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/tests/acpx_sidecar_transport.rs",
+        "line": 191,
+        "commit": "ab15aff390c9bbb0495cd93603adeaf118242a3d"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/chat-adapters/2026-09-08-github-private-attachment-authority.md",
+        "line": 107,
+        "commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/plans/chat-adapters/2026-09-08-chat-queue-and-webhook-repair.md",
+        "line": 6669,
+        "commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d"
+      },
+      {
+        "rule": "discord-api-token",
+        "file": "doc/plans/chat-adapters/2026-09-08-chat-queue-and-webhook-repair.md",
+        "line": 3585,
+        "commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/http-log-redaction.test.ts",
+        "line": 537,
+        "commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/http-log-redaction.test.ts",
+        "line": 539,
+        "commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/redact-sensitive.test.ts",
+        "line": 13,
+        "commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d"
+      },
+      {
+        "rule": "private-key",
+        "file": "tests/e2e/chat-adapters-ui.spec.ts",
+        "line": 23,
+        "commit": "889947c238c088a09c39d2783bc5e3521a8d1d8d"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "packages/paperclip-runner/src/drivers/opencode/opencode-server-driver.test.ts",
+        "line": 57,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "line": 2322,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "line": 2333,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "line": 2343,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "line": 2353,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "line": 2322,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "line": 2333,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "line": 2343,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/paperclip-runner/runner/crates/runner-core/src/durable/state.rs",
+        "line": 2353,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "packages/paperclip-runner/src/live/runnerd-codex-transport.test.ts",
+        "line": 809,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "jwt",
+        "file": "server/src/__tests__/redaction.test.ts",
+        "line": 101,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "jwt",
+        "file": "server/src/__tests__/redaction.test.ts",
+        "line": 340,
+        "commit": "0f9452101740835ce0b1488a204bf48acd5bafc3"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "packages/paperclip-runner/src/live/runnerd-codex-transport.test.ts",
+        "line": 491,
+        "commit": "560e7e48b5f8db2a64237ff6908dff57f23bbabd"
+      },
+      {
+        "rule": "jwt",
+        "file": "server/src/__tests__/redaction.test.ts",
+        "line": 48,
+        "commit": "25cf079ec54ec619882f30c3d862a9370827be05"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "packages/paperclip-runner/src/drivers/opencode/opencode-server-driver.test.ts",
+        "line": 39,
+        "commit": "2e5a24e17769f206fb350a719bf7c85eadb348c7"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "packages/paperclip-runner/src/tools/capability-semantic-tools.test.ts",
+        "line": 1841,
+        "commit": "ea86e780af658b13d804f7908a15c0a60d293e91"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "ui/src/pages/apps/gateways/ConnectClientDialog.test.tsx",
+        "line": 75,
+        "commit": "b51112798f1794776adf837982be58d231d5ac3d"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "packages/paperclip-runner/src/control-plane/durable-prp-control-plane.test.ts",
+        "line": 170,
+        "commit": "9964b034bbff24e700c8eccf5a8b1fc3daa44bf2"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/server-startup-feedback-export.test.ts",
+        "line": 289,
+        "commit": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/server-startup-feedback-export.test.ts",
+        "line": 290,
+        "commit": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/server-startup-feedback-export.test.ts",
+        "line": 406,
+        "commit": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/server-startup-feedback-export.test.ts",
+        "line": 453,
+        "commit": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/decisions-service.test.ts",
+        "line": 44,
+        "commit": "9c1f8e788732c2cff971d8f2b0c69499bde0fac7"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "ui/src/pages/apps/gateways/gateway-helpers.test.ts",
+        "line": 112,
+        "commit": "f712cedbc2e0c86ffa606018609831167641766a"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "ui/src/pages/apps/gateways/panels/TokensPanel.test.tsx",
+        "line": 52,
+        "commit": "f712cedbc2e0c86ffa606018609831167641766a"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/tool-gateway.test.ts",
+        "line": 2072,
+        "commit": "931eec3fbf83dc425b5381ba5823125162cd13e7"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/google-sheets-mcp-server/src/http.test.ts",
+        "line": 26,
+        "commit": "7b35de65aaabbd53c2393cdf10c2223e36af1c23"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/google-sheets-mcp-server/src/server.test.ts",
+        "line": 25,
+        "commit": "7b35de65aaabbd53c2393cdf10c2223e36af1c23"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/environment-custom-images-service.test.ts",
+        "line": 456,
+        "commit": "8d9f9fd24086a3ae8ee7edc83f8368084be81277"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/invite-accept-gateway-defaults.test.ts",
+        "line": 203,
+        "commit": "d77fab6aae3146ab5957c4d4d54d634f22545707"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/invite-accept-gateway-defaults.test.ts",
+        "line": 233,
+        "commit": "d77fab6aae3146ab5957c4d4d54d634f22545707"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/invite-accept-gateway-defaults.test.ts",
+        "line": 155,
+        "commit": "fd2f82ac5bba6ce2db0c5d17c573733af5f2bbb8"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/invite-accept-gateway-defaults.test.ts",
+        "line": 178,
+        "commit": "fd2f82ac5bba6ce2db0c5d17c573733af5f2bbb8"
+      },
+      {
+        "rule": "curl-auth-header",
+        "file": "scripts/smoke/hermes-gateway-e2e.sh",
+        "line": 610,
+        "commit": "fd2f82ac5bba6ce2db0c5d17c573733af5f2bbb8"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/redact-sensitive.test.ts",
+        "line": 6,
+        "commit": "bb7978327ed568bf012f6efe16fd200e8baa3a5c"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/company-artifacts-service.test.ts",
+        "line": 232,
+        "commit": "4693d770aab4ec8342833cfed78dd4ac43c49f7a"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/logs/2026-05-24-cli-api-parity-e2e-log.md",
+        "line": 34,
+        "commit": "70b1a9109d756818fb448beafa67af27babb52de"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "doc/logs/2026-05-24-cli-api-parity-e2e-log.md",
+        "line": 35,
+        "commit": "70b1a9109d756818fb448beafa67af27babb52de"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/plugins/sandbox-providers/exe-dev/src/plugin.ts",
+        "line": 170,
+        "commit": "aea35fe695672061918af10e5493c9d890e44d13"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/plugins/sandbox-providers/exe-dev/src/plugin.test.ts",
+        "line": 170,
+        "commit": "aea35fe695672061918af10e5493c9d890e44d13"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/plugins/sandbox-providers/exe-dev/src/plugin.test.ts",
+        "line": 179,
+        "commit": "aea35fe695672061918af10e5493c9d890e44d13"
+      },
+      {
+        "rule": "private-key",
+        "file": "packages/plugins/sandbox-providers/exe-dev/src/plugin.test.ts",
+        "line": 246,
+        "commit": "aea35fe695672061918af10e5493c9d890e44d13"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/secrets-service.test.ts",
+        "line": 997,
+        "commit": "778e775c35834aabe09266fb6d415d3dafbd1deb"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "server/src/__tests__/secrets-service.test.ts",
+        "line": 1113,
+        "commit": "778e775c35834aabe09266fb6d415d3dafbd1deb"
+      },
+      {
+        "rule": "jwt",
+        "file": "server/src/__tests__/redaction.test.ts",
+        "line": 68,
+        "commit": "5a0c1979cf439d434c527de4935687a178be4b8e"
+      },
+      {
+        "rule": "jwt",
+        "file": "server/src/__tests__/heartbeat-active-run-output-watchdog.test.ts",
+        "line": 220,
+        "commit": "5a0c1979cf439d434c527de4935687a178be4b8e"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "docs/deploy/secrets.md",
+        "line": 76,
+        "commit": "09d2ef1a37c9097b983a9705ff30f5c2225fc880"
+      },
+      {
+        "rule": "generic-api-key",
+        "file": "docs/deploy/secrets.md",
+        "line": 78,
+        "commit": "02dc46e78214083acebba040e9b57833596add9d"
+      }
+    ]
+  },
+  "local_sast": {
+    "check": "semgrep-local-rules",
+    "exit_code": 0,
+    "status": "NOT VERIFIED",
+    "candidate_count": 0,
+    "candidates": [],
+    "error_count": 16
+  },
+  "dependency_counts_before": {
+    "info": 0,
+    "low": 9,
+    "moderate": 26,
+    "high": 21,
+    "critical": 1
+  },
+  "dependency_counts_after": {
+    "info": 0,
+    "low": 9,
+    "moderate": 26,
+    "high": 21,
+    "critical": 1
+  },
+  "osv_affected_package_entries": 27,
+  "osv_unique_advisory_ids": [
+    "GHSA-238p-pmpm-9mq7",
+    "GHSA-27v5-c462-wpq7",
+    "GHSA-2883-xcg3-v3hh",
+    "GHSA-2gqq-gqf2-x968",
+    "GHSA-2jfj-6hjv-fm6j",
+    "GHSA-2mjp-6q6p-2qxm",
+    "GHSA-35p6-xmwp-9g52",
+    "GHSA-3wwx-pv8p-q78v",
+    "GHSA-3xpg-4rpp-hhhm",
+    "GHSA-4992-7rv2-5pvq",
+    "GHSA-4c8g-83qw-93j6",
+    "GHSA-4mjr-xmp4-gh2g",
+    "GHSA-67mh-4wv8-2f99",
+    "GHSA-68fv-2mgg-jv7q",
+    "GHSA-6j4f-fj2g-mc7p",
+    "GHSA-7p8r-x3mc-p8w7",
+    "GHSA-8436-99hf-9mmv",
+    "GHSA-8xcm-r25x-g524",
+    "GHSA-f596-whhp-79r4",
+    "GHSA-f65p-4m7j-42xc",
+    "GHSA-fph4-wmhf-6fwf",
+    "GHSA-g8m3-5g58-fq7m",
+    "GHSA-g9mf-h72j-4rw9",
+    "GHSA-gxm5-99cw-xjw9",
+    "GHSA-hmw2-7cc7-3qxx",
+    "GHSA-hrr3-gc8f-f4qj",
+    "GHSA-j3q9-mxjg-w52f",
+    "GHSA-jggr-w7fw-pc2j",
+    "GHSA-jqcg-44mw-7w3h",
+    "GHSA-jqff-g426-hqxp",
+    "GHSA-m8rv-5g2x-5cg5",
+    "GHSA-m9gg-hp2v-232j",
+    "GHSA-p88m-4jfj-68fv",
+    "GHSA-pmjh-fq2x-6v4x",
+    "GHSA-pqg4-j6r4-53mv",
+    "GHSA-q2hr-2g5m-vwhr",
+    "GHSA-q8mj-m7cp-5q26",
+    "GHSA-qhr7-859c-m2p7",
+    "GHSA-qw65-cvwx-89v3",
+    "GHSA-r4xh-jqrq-34v2",
+    "GHSA-r53p-7pc4-xj5r",
+    "GHSA-rfgv-xxqx-mfg5",
+    "GHSA-rj75-hqrm-r3gf",
+    "GHSA-rx4f-c7p8-82vq",
+    "GHSA-v2hh-gcrm-f6hx",
+    "GHSA-v3r7-h72x-cjcm",
+    "GHSA-v422-hmwv-36x6",
+    "GHSA-v9p9-hfj2-hcw8",
+    "GHSA-vfj7-8cjw-p6xm",
+    "GHSA-vp8m-p9jh-q5pm",
+    "GHSA-vrm6-8vpv-qv8q",
+    "GHSA-vxpw-j846-p89q",
+    "GHSA-w293-vg96-wgc3",
+    "GHSA-w5hq-g745-h8pq",
+    "GHSA-wq5f-xc86-pv6w",
+    "GHSA-x5fp-wj9c-mxmx",
+    "GHSA-x8mw-p69m-v3mx",
+    "RUSTSEC-2025-0134",
+    "RUSTSEC-2026-0338",
+    "RUSTSEC-2026-0340",
+    "RUSTSEC-2026-0343",
+    "RUSTSEC-2026-0346",
+    "RUSTSEC-2026-0347",
+    "RUSTSEC-2026-0348",
+    "RUSTSEC-2026-0349"
+  ],
+  "recovery": {
+    "repository": "Amankendi/paperclip",
+    "status": "PASS",
+    "scope": "local code bundle restoration only; no offsite/data/LFS/host-state claim",
+    "steps_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "5c6310a70788a560ca4b22138247b12fb745a37f1171501f3795083dcd9e0ca5",
+    "bytes": 188806142
+  },
+  "workflow_source": [
+    {
+      "workflow": "e2e.yml",
+      "explicit_workflow_permissions": false,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "storybook-deploy.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "alkendi-security.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "cloud-migrator-artifacts.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "runner-full-stack-e2e.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "commitperclip-review.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": true,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "pr.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [
+        "paperclipai/paperclip/.github/workflows/pr-trusted.yml@master"
+      ],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "cloud-readiness.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "refresh-lockfile.yml",
+      "explicit_workflow_permissions": false,
+      "unpinned_actions": [
+        "actions/checkout@v7",
+        "pnpm/action-setup@v6",
+        "actions/setup-node@v7"
+      ],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "pr-trusted.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "release-smoke.yml",
+      "explicit_workflow_permissions": false,
+      "unpinned_actions": [
+        "actions/checkout@v7",
+        "actions/setup-node@v7",
+        "actions/upload-artifact@v7",
+        "actions/checkout@v7",
+        "pnpm/action-setup@v6",
+        "actions/setup-node@v7",
+        "actions/upload-artifact@v7"
+      ],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "storybook-visual.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [
+        "actions/checkout@v7",
+        "pnpm/action-setup@v6",
+        "actions/setup-node@v7",
+        "actions/cache@v6.1.0",
+        "actions/upload-artifact@v7",
+        "actions/upload-artifact@v7"
+      ],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "agent-runtime-images.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [
+        "actions/checkout@v7",
+        "docker/setup-buildx-action@v4",
+        "docker/login-action@v4",
+        "sigstore/cosign-installer@v3"
+      ],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "runner-chaos-evals.yml",
+      "explicit_workflow_permissions": false,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "runner-protocol-live-evals.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "release.yml",
+      "explicit_workflow_permissions": false,
+      "unpinned_actions": [
+        "actions/checkout@v7",
+        "pnpm/action-setup@v6",
+        "actions/setup-node@v7",
+        "actions/checkout@v7",
+        "actions/checkout@v7",
+        "pnpm/action-setup@v6",
+        "actions/setup-node@v7",
+        "actions/checkout@v7",
+        "actions/checkout@v7",
+        "pnpm/action-setup@v6",
+        "actions/setup-node@v7",
+        "actions/checkout@v7",
+        "actions/checkout@v7",
+        "actions/checkout@v7",
+        "pnpm/action-setup@v6",
+        "actions/setup-node@v7",
+        "actions/checkout@v7",
+        "pnpm/action-setup@v6",
+        "actions/setup-node@v7",
+        "actions/checkout@v7"
+      ],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "sentry-contract.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "docker.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [
+        "actions/checkout@v7",
+        "pnpm/action-setup@v6",
+        "actions/setup-node@v7",
+        "docker/login-action@v4",
+        "docker/setup-buildx-action@v4",
+        "docker/metadata-action@v6",
+        "docker/build-push-action@v7",
+        "docker/login-action@v4"
+      ],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "docker-runner-check.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "runner-live-evals.yml",
+      "explicit_workflow_permissions": false,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "release-verify.yml",
+      "explicit_workflow_permissions": false,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    }
+  ],
+  "remaining_advisories": [
+    {
+      "module_name": "cli",
+      "severity": "low",
+      "title": "Arbitrary File Write in cli",
+      "url": "https://github.com/advisories/GHSA-6cpc-mj5c-m9rq",
+      "vulnerable_versions": "<1.0.0",
+      "patched_versions": ">=1.0.0"
+    },
+    {
+      "module_name": "esbuild",
+      "severity": "moderate",
+      "title": "esbuild enables any website to send any requests to the development server and read the response",
+      "url": "https://github.com/advisories/GHSA-67mh-4wv8-2f99",
+      "vulnerable_versions": "<=0.24.2",
+      "patched_versions": ">=0.25.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "Undici has an unbounded decompression chain in HTTP responses on Node.js Fetch API via Content-Encoding leads to resource exhaustion",
+      "url": "https://github.com/advisories/GHSA-g9mf-h72j-4rw9",
+      "vulnerable_versions": "<6.23.0",
+      "patched_versions": ">=6.23.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "Undici has an HTTP Request/Response Smuggling issue",
+      "url": "https://github.com/advisories/GHSA-2mjp-6q6p-2qxm",
+      "vulnerable_versions": "<6.24.0",
+      "patched_versions": ">=6.24.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "Undici has Unbounded Memory Consumption in WebSocket permessage-deflate Decompression",
+      "url": "https://github.com/advisories/GHSA-vrm6-8vpv-qv8q",
+      "vulnerable_versions": "<6.24.0",
+      "patched_versions": ">=6.24.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "Undici has Unhandled Exception in WebSocket Client Due to Invalid server_max_window_bits Validation",
+      "url": "https://github.com/advisories/GHSA-v9p9-hfj2-hcw8",
+      "vulnerable_versions": "<6.24.0",
+      "patched_versions": ">=6.24.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "Undici has CRLF Injection in undici via `upgrade` option",
+      "url": "https://github.com/advisories/GHSA-4992-7rv2-5pvq",
+      "vulnerable_versions": "<6.24.0",
+      "patched_versions": ">=6.24.0"
+    },
+    {
+      "module_name": "path-to-regexp",
+      "severity": "high",
+      "title": "path-to-regexp vulnerable to Denial of Service via sequential optional groups",
+      "url": "https://github.com/advisories/GHSA-j3q9-mxjg-w52f",
+      "vulnerable_versions": ">=8.0.0 <8.4.0",
+      "patched_versions": ">=8.4.0"
+    },
+    {
+      "module_name": "path-to-regexp",
+      "severity": "moderate",
+      "title": "path-to-regexp vulnerable to Regular Expression Denial of Service via multiple wildcards",
+      "url": "https://github.com/advisories/GHSA-27v5-c462-wpq7",
+      "vulnerable_versions": ">=8.0.0 <8.4.0",
+      "patched_versions": ">=8.4.0"
+    },
+    {
+      "module_name": "uuid",
+      "severity": "moderate",
+      "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+      "url": "https://github.com/advisories/GHSA-w5hq-g745-h8pq",
+      "vulnerable_versions": "<11.1.1",
+      "patched_versions": ">=11.1.1"
+    },
+    {
+      "module_name": "qs",
+      "severity": "moderate",
+      "title": "qs has a remotely triggerable DoS: qs.stringify crashes with TypeError on null/undefined entries in comma-format arrays when encodeValuesOnly is set",
+      "url": "https://github.com/advisories/GHSA-q8mj-m7cp-5q26",
+      "vulnerable_versions": ">=6.11.1 <=6.15.1",
+      "patched_versions": ">=6.15.2"
+    },
+    {
+      "module_name": "form-data",
+      "severity": "high",
+      "title": "form-data: CRLF injection in form-data via unescaped multipart field names and filenames",
+      "url": "https://github.com/advisories/GHSA-hmw2-7cc7-3qxx",
+      "vulnerable_versions": ">=4.0.0 <4.0.6",
+      "patched_versions": ">=4.0.6"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to HTTP header injection via Set-Cookie percent-decoding",
+      "url": "https://github.com/advisories/GHSA-p88m-4jfj-68fv",
+      "vulnerable_versions": "<6.27.0",
+      "patched_versions": ">=6.27.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "undici WebSocket client vulnerable to denial of service via fragment count bypass",
+      "url": "https://github.com/advisories/GHSA-vxpw-j846-p89q",
+      "vulnerable_versions": "<6.27.0",
+      "patched_versions": ">=6.27.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "low",
+      "title": "undici vulnerable to Set-Cookie SameSite attribute downgrade via permissive substring matching",
+      "url": "https://github.com/advisories/GHSA-g8m3-5g58-fq7m",
+      "vulnerable_versions": "<6.27.0",
+      "patched_versions": ">=6.27.0"
+    },
+    {
+      "module_name": "body-parser",
+      "severity": "low",
+      "title": "body-parser vulnerable to denial of service when invalid limit value silently disables size enforcement",
+      "url": "https://github.com/advisories/GHSA-v422-hmwv-36x6",
+      "vulnerable_versions": ">=2.0.0 <2.3.0",
+      "patched_versions": ">=2.3.0"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to host confusion via literal backslash authority delimiter",
+      "url": "https://github.com/advisories/GHSA-v2hh-gcrm-f6hx",
+      "vulnerable_versions": ">=3.0.0 <=3.1.3",
+      "patched_versions": ">=3.1.4"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to downstream response desynchronization via retry interceptor",
+      "url": "https://github.com/advisories/GHSA-8xcm-r25x-g524",
+      "vulnerable_versions": "<6.28.0",
+      "patched_versions": ">=6.28.0"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to host confusion via backslash authority introducer",
+      "url": "https://github.com/advisories/GHSA-7p8r-x3mc-p8w7",
+      "vulnerable_versions": ">=3.0.0 <3.1.5",
+      "patched_versions": ">=3.1.5"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to CRLF Injection via blob-like body 'type' property",
+      "url": "https://github.com/advisories/GHSA-m8rv-5g2x-5cg5",
+      "vulnerable_versions": "<6.28.0",
+      "patched_versions": ">=6.28.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to cookie attribute injection via unsanitized domain and unparsed setCookie fields",
+      "url": "https://github.com/advisories/GHSA-v3r7-h72x-cjcm",
+      "vulnerable_versions": "<6.28.0",
+      "patched_versions": ">=6.28.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "low",
+      "title": "undici vulnerable to HTTP response queue poisoning via keep-alive socket reuse",
+      "url": "https://github.com/advisories/GHSA-35p6-xmwp-9g52",
+      "vulnerable_versions": "<6.27.0",
+      "patched_versions": ">=6.27.0"
+    },
+    {
+      "module_name": "qs",
+      "severity": "moderate",
+      "title": "qs array-limit bypass via bracket-key comma parsing",
+      "url": "https://github.com/advisories/GHSA-x5fp-wj9c-mxmx",
+      "vulnerable_versions": ">=6.14.2 <=6.15.3",
+      "patched_versions": ">=6.16.0"
+    },
+    {
+      "module_name": "qs",
+      "severity": "moderate",
+      "title": "qs: Denial of Service via Attacker Controlled isBuffer",
+      "url": "https://github.com/advisories/GHSA-4mjr-xmp4-gh2g",
+      "vulnerable_versions": ">=2.2.5 <6.16.0",
+      "patched_versions": ">=6.16.0"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to server-side request forgery via malformed IPv6 normalization",
+      "url": "https://github.com/advisories/GHSA-f65p-4m7j-42xc",
+      "vulnerable_versions": ">=3.0.0 <3.1.6",
+      "patched_versions": ">=3.1.6"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to server-side request forgery via repeated hostname percent-decoding",
+      "url": "https://github.com/advisories/GHSA-fph4-wmhf-6fwf",
+      "vulnerable_versions": ">=3.1.2 <3.1.6",
+      "patched_versions": ">=3.1.6"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to host confusion via percent-encoded scheme normalization",
+      "url": "https://github.com/advisories/GHSA-jqff-g426-hqxp",
+      "vulnerable_versions": ">=3.0.0 <3.1.6",
+      "patched_versions": ">=3.1.6"
+    },
+    {
+      "module_name": "js-yaml",
+      "severity": "high",
+      "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+      "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "vulnerable_versions": ">=4.0.0 <4.3.2",
+      "patched_versions": ">=4.3.2"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to host confusion via failed IDN canonicalization",
+      "url": "https://github.com/advisories/GHSA-4c8g-83qw-93j6",
+      "vulnerable_versions": ">=3.0.0 <3.1.3",
+      "patched_versions": ">=3.1.3"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to Denial of Service via unhandled error in WebSocket permessage-deflate decompression",
+      "url": "https://github.com/advisories/GHSA-3wwx-pv8p-q78v",
+      "vulnerable_versions": ">=8.1.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to authority injection via an unvalidated port in serialize",
+      "url": "https://github.com/advisories/GHSA-qw65-cvwx-89v3",
+      "vulnerable_versions": ">=3.0.0 <3.1.7",
+      "patched_versions": ">=3.1.7"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to Denial of Service via orphaned RetryHandler response body",
+      "url": "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "low",
+      "title": "undici vulnerable to downstream response splitting via retry interceptor",
+      "url": "https://github.com/advisories/GHSA-r53p-7pc4-xj5r",
+      "vulnerable_versions": "<6.28.1",
+      "patched_versions": ">=6.28.1"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "undici vulnerable to Denial of Service via unrequested WebSocket subprotocol",
+      "url": "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to Denial of Service via unbounded decompression of compressed responses",
+      "url": "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to cross-user cookie disclosure via Set-Cookie caching in shared caches",
+      "url": "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "low",
+      "title": "undici vulnerable to response truncation via oversized chunked responses in the dump interceptor",
+      "url": "https://github.com/advisories/GHSA-2gqq-gqf2-x968",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "undici vulnerable to TLS certificate validation bypass via dropped connect options in BalancedPool",
+      "url": "https://github.com/advisories/GHSA-w293-vg96-wgc3",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "low",
+      "title": "undici vulnerable to caching and replay of unsafe HTTP method responses",
+      "url": "https://github.com/advisories/GHSA-8436-99hf-9mmv",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "undici vulnerable to cross-origin cache poisoning via missing origin isolation in interceptors",
+      "url": "https://github.com/advisories/GHSA-vp8m-p9jh-q5pm",
+      "vulnerable_versions": ">=8.10.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to Denial of Service via WebSocketStream unclean close",
+      "url": "https://github.com/advisories/GHSA-rx4f-c7p8-82vq",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "moderate",
+      "title": "fast-uri vulnerable to inconsistent host case normalization via percent-encoded octets",
+      "url": "https://github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+      "vulnerable_versions": ">=3.0.0 <3.1.8",
+      "patched_versions": ">=3.1.8"
+    },
+    {
+      "module_name": "brace-expansion",
+      "severity": "moderate",
+      "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+      "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "vulnerable_versions": ">=4.0.0 <5.0.12",
+      "patched_versions": ">=5.0.12"
+    },
+    {
+      "module_name": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "vulnerable_versions": ">=4.0.0 <5.0.11",
+      "patched_versions": ">=5.0.11"
+    },
+    {
+      "module_name": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "vulnerable_versions": ">=4.0.0 <5.0.10",
+      "patched_versions": ">=5.0.10"
+    },
+    {
+      "module_name": "@fastify/busboy",
+      "severity": "high",
+      "title": "@fastify/busboy vulnerable to Denial of Service via prototype-named multipart part header",
+      "url": "https://github.com/advisories/GHSA-x8mw-p69m-v3mx",
+      "vulnerable_versions": ">=1.0.0 <3.2.1",
+      "patched_versions": ">=3.2.1"
+    },
+    {
+      "module_name": "smol-toml",
+      "severity": "moderate",
+      "title": "smol-toml: Quadratic-time parse() from parseKey rescanning to end of document on each key line",
+      "url": "https://github.com/advisories/GHSA-r4xh-jqrq-34v2",
+      "vulnerable_versions": "<=1.8.0",
+      "patched_versions": ">=1.9.0"
+    },
+    {
+      "module_name": "katex",
+      "severity": "low",
+      "title": "KaTeX: Existing prototype pollution can bypass trust restrictions",
+      "url": "https://github.com/advisories/GHSA-238p-pmpm-9mq7",
+      "vulnerable_versions": ">=0.11.0 <0.18.2",
+      "patched_versions": ">=0.18.2"
+    },
+    {
+      "module_name": "source-map-js",
+      "severity": "high",
+      "title": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+      "url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+      "vulnerable_versions": ">=1.0.0 <1.2.2",
+      "patched_versions": ">=1.2.2"
+    },
+    {
+      "module_name": "proxy-addr",
+      "severity": "critical",
+      "title": "proxy-addr vulnerable to IP spoofing via IPv4-mapped IPv6 trust subnet",
+      "url": "https://github.com/advisories/GHSA-jqcg-44mw-7w3h",
+      "vulnerable_versions": ">=1.1.0 <2.0.8",
+      "patched_versions": ">=2.0.8"
+    },
+    {
+      "module_name": "postcss-selector-parser",
+      "severity": "moderate",
+      "title": "PostCSS: Quadratic complexity in flat selector parsing allows CPU exhaustion",
+      "url": "https://github.com/advisories/GHSA-rj75-hqrm-r3gf",
+      "vulnerable_versions": "<7.1.6",
+      "patched_versions": ">=7.1.6"
+    },
+    {
+      "module_name": "fast-copy",
+      "severity": "moderate",
+      "title": "fast-copy: Stack exhaustion in fast-copy when copying deeply-nested values",
+      "url": "https://github.com/advisories/GHSA-jggr-w7fw-pc2j",
+      "vulnerable_versions": ">=4.0.0 <4.1.0",
+      "patched_versions": ">=4.1.0"
+    },
+    {
+      "module_name": "@fastify/busboy",
+      "severity": "moderate",
+      "title": "@fastify/busboy vulnerable to CRLF injection via multipart Content-Disposition filename and name",
+      "url": "https://github.com/advisories/GHSA-gxm5-99cw-xjw9",
+      "vulnerable_versions": "<3.2.2",
+      "patched_versions": ">=3.2.2"
+    },
+    {
+      "module_name": "sharp",
+      "severity": "high",
+      "title": "sharp : Vulnerability in librsvg dependency CVE-2026-96889",
+      "url": "https://github.com/advisories/GHSA-wq5f-xc86-pv6w",
+      "vulnerable_versions": "<0.35.5",
+      "patched_versions": ">=0.35.5"
+    }
+  ],
+  "validation": {
+    "evidence": "See report and CI; no full upstream product-suite claim"
+  }
+}
