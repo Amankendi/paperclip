@@ -2268,5 +2268,442 @@
       "privileged_trigger": false,
       "yaml_valid": true
     }
-  ]
+  ],
+  "remaining_advisories": [
+    {
+      "module_name": "cli",
+      "severity": "low",
+      "title": "Arbitrary File Write in cli",
+      "url": "https://github.com/advisories/GHSA-6cpc-mj5c-m9rq",
+      "vulnerable_versions": "<1.0.0",
+      "patched_versions": ">=1.0.0"
+    },
+    {
+      "module_name": "esbuild",
+      "severity": "moderate",
+      "title": "esbuild enables any website to send any requests to the development server and read the response",
+      "url": "https://github.com/advisories/GHSA-67mh-4wv8-2f99",
+      "vulnerable_versions": "<=0.24.2",
+      "patched_versions": ">=0.25.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "Undici has an unbounded decompression chain in HTTP responses on Node.js Fetch API via Content-Encoding leads to resource exhaustion",
+      "url": "https://github.com/advisories/GHSA-g9mf-h72j-4rw9",
+      "vulnerable_versions": "<6.23.0",
+      "patched_versions": ">=6.23.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "Undici has an HTTP Request/Response Smuggling issue",
+      "url": "https://github.com/advisories/GHSA-2mjp-6q6p-2qxm",
+      "vulnerable_versions": "<6.24.0",
+      "patched_versions": ">=6.24.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "Undici has Unbounded Memory Consumption in WebSocket permessage-deflate Decompression",
+      "url": "https://github.com/advisories/GHSA-vrm6-8vpv-qv8q",
+      "vulnerable_versions": "<6.24.0",
+      "patched_versions": ">=6.24.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "Undici has Unhandled Exception in WebSocket Client Due to Invalid server_max_window_bits Validation",
+      "url": "https://github.com/advisories/GHSA-v9p9-hfj2-hcw8",
+      "vulnerable_versions": "<6.24.0",
+      "patched_versions": ">=6.24.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "Undici has CRLF Injection in undici via `upgrade` option",
+      "url": "https://github.com/advisories/GHSA-4992-7rv2-5pvq",
+      "vulnerable_versions": "<6.24.0",
+      "patched_versions": ">=6.24.0"
+    },
+    {
+      "module_name": "path-to-regexp",
+      "severity": "high",
+      "title": "path-to-regexp vulnerable to Denial of Service via sequential optional groups",
+      "url": "https://github.com/advisories/GHSA-j3q9-mxjg-w52f",
+      "vulnerable_versions": ">=8.0.0 <8.4.0",
+      "patched_versions": ">=8.4.0"
+    },
+    {
+      "module_name": "path-to-regexp",
+      "severity": "moderate",
+      "title": "path-to-regexp vulnerable to Regular Expression Denial of Service via multiple wildcards",
+      "url": "https://github.com/advisories/GHSA-27v5-c462-wpq7",
+      "vulnerable_versions": ">=8.0.0 <8.4.0",
+      "patched_versions": ">=8.4.0"
+    },
+    {
+      "module_name": "uuid",
+      "severity": "moderate",
+      "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+      "url": "https://github.com/advisories/GHSA-w5hq-g745-h8pq",
+      "vulnerable_versions": "<11.1.1",
+      "patched_versions": ">=11.1.1"
+    },
+    {
+      "module_name": "qs",
+      "severity": "moderate",
+      "title": "qs has a remotely triggerable DoS: qs.stringify crashes with TypeError on null/undefined entries in comma-format arrays when encodeValuesOnly is set",
+      "url": "https://github.com/advisories/GHSA-q8mj-m7cp-5q26",
+      "vulnerable_versions": ">=6.11.1 <=6.15.1",
+      "patched_versions": ">=6.15.2"
+    },
+    {
+      "module_name": "form-data",
+      "severity": "high",
+      "title": "form-data: CRLF injection in form-data via unescaped multipart field names and filenames",
+      "url": "https://github.com/advisories/GHSA-hmw2-7cc7-3qxx",
+      "vulnerable_versions": ">=4.0.0 <4.0.6",
+      "patched_versions": ">=4.0.6"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to HTTP header injection via Set-Cookie percent-decoding",
+      "url": "https://github.com/advisories/GHSA-p88m-4jfj-68fv",
+      "vulnerable_versions": "<6.27.0",
+      "patched_versions": ">=6.27.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "undici WebSocket client vulnerable to denial of service via fragment count bypass",
+      "url": "https://github.com/advisories/GHSA-vxpw-j846-p89q",
+      "vulnerable_versions": "<6.27.0",
+      "patched_versions": ">=6.27.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "low",
+      "title": "undici vulnerable to Set-Cookie SameSite attribute downgrade via permissive substring matching",
+      "url": "https://github.com/advisories/GHSA-g8m3-5g58-fq7m",
+      "vulnerable_versions": "<6.27.0",
+      "patched_versions": ">=6.27.0"
+    },
+    {
+      "module_name": "body-parser",
+      "severity": "low",
+      "title": "body-parser vulnerable to denial of service when invalid limit value silently disables size enforcement",
+      "url": "https://github.com/advisories/GHSA-v422-hmwv-36x6",
+      "vulnerable_versions": ">=2.0.0 <2.3.0",
+      "patched_versions": ">=2.3.0"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to host confusion via literal backslash authority delimiter",
+      "url": "https://github.com/advisories/GHSA-v2hh-gcrm-f6hx",
+      "vulnerable_versions": ">=3.0.0 <=3.1.3",
+      "patched_versions": ">=3.1.4"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to downstream response desynchronization via retry interceptor",
+      "url": "https://github.com/advisories/GHSA-8xcm-r25x-g524",
+      "vulnerable_versions": "<6.28.0",
+      "patched_versions": ">=6.28.0"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to host confusion via backslash authority introducer",
+      "url": "https://github.com/advisories/GHSA-7p8r-x3mc-p8w7",
+      "vulnerable_versions": ">=3.0.0 <3.1.5",
+      "patched_versions": ">=3.1.5"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to CRLF Injection via blob-like body 'type' property",
+      "url": "https://github.com/advisories/GHSA-m8rv-5g2x-5cg5",
+      "vulnerable_versions": "<6.28.0",
+      "patched_versions": ">=6.28.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to cookie attribute injection via unsanitized domain and unparsed setCookie fields",
+      "url": "https://github.com/advisories/GHSA-v3r7-h72x-cjcm",
+      "vulnerable_versions": "<6.28.0",
+      "patched_versions": ">=6.28.0"
+    },
+    {
+      "module_name": "undici",
+      "severity": "low",
+      "title": "undici vulnerable to HTTP response queue poisoning via keep-alive socket reuse",
+      "url": "https://github.com/advisories/GHSA-35p6-xmwp-9g52",
+      "vulnerable_versions": "<6.27.0",
+      "patched_versions": ">=6.27.0"
+    },
+    {
+      "module_name": "qs",
+      "severity": "moderate",
+      "title": "qs array-limit bypass via bracket-key comma parsing",
+      "url": "https://github.com/advisories/GHSA-x5fp-wj9c-mxmx",
+      "vulnerable_versions": ">=6.14.2 <=6.15.3",
+      "patched_versions": ">=6.16.0"
+    },
+    {
+      "module_name": "qs",
+      "severity": "moderate",
+      "title": "qs: Denial of Service via Attacker Controlled isBuffer",
+      "url": "https://github.com/advisories/GHSA-4mjr-xmp4-gh2g",
+      "vulnerable_versions": ">=2.2.5 <6.16.0",
+      "patched_versions": ">=6.16.0"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to server-side request forgery via malformed IPv6 normalization",
+      "url": "https://github.com/advisories/GHSA-f65p-4m7j-42xc",
+      "vulnerable_versions": ">=3.0.0 <3.1.6",
+      "patched_versions": ">=3.1.6"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to server-side request forgery via repeated hostname percent-decoding",
+      "url": "https://github.com/advisories/GHSA-fph4-wmhf-6fwf",
+      "vulnerable_versions": ">=3.1.2 <3.1.6",
+      "patched_versions": ">=3.1.6"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to host confusion via percent-encoded scheme normalization",
+      "url": "https://github.com/advisories/GHSA-jqff-g426-hqxp",
+      "vulnerable_versions": ">=3.0.0 <3.1.6",
+      "patched_versions": ">=3.1.6"
+    },
+    {
+      "module_name": "js-yaml",
+      "severity": "high",
+      "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+      "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "vulnerable_versions": ">=4.0.0 <4.3.2",
+      "patched_versions": ">=4.3.2"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to host confusion via failed IDN canonicalization",
+      "url": "https://github.com/advisories/GHSA-4c8g-83qw-93j6",
+      "vulnerable_versions": ">=3.0.0 <3.1.3",
+      "patched_versions": ">=3.1.3"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to Denial of Service via unhandled error in WebSocket permessage-deflate decompression",
+      "url": "https://github.com/advisories/GHSA-3wwx-pv8p-q78v",
+      "vulnerable_versions": ">=8.1.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "high",
+      "title": "fast-uri vulnerable to authority injection via an unvalidated port in serialize",
+      "url": "https://github.com/advisories/GHSA-qw65-cvwx-89v3",
+      "vulnerable_versions": ">=3.0.0 <3.1.7",
+      "patched_versions": ">=3.1.7"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to Denial of Service via orphaned RetryHandler response body",
+      "url": "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "low",
+      "title": "undici vulnerable to downstream response splitting via retry interceptor",
+      "url": "https://github.com/advisories/GHSA-r53p-7pc4-xj5r",
+      "vulnerable_versions": "<6.28.1",
+      "patched_versions": ">=6.28.1"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "undici vulnerable to Denial of Service via unrequested WebSocket subprotocol",
+      "url": "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to Denial of Service via unbounded decompression of compressed responses",
+      "url": "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to cross-user cookie disclosure via Set-Cookie caching in shared caches",
+      "url": "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "low",
+      "title": "undici vulnerable to response truncation via oversized chunked responses in the dump interceptor",
+      "url": "https://github.com/advisories/GHSA-2gqq-gqf2-x968",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "undici vulnerable to TLS certificate validation bypass via dropped connect options in BalancedPool",
+      "url": "https://github.com/advisories/GHSA-w293-vg96-wgc3",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "low",
+      "title": "undici vulnerable to caching and replay of unsafe HTTP method responses",
+      "url": "https://github.com/advisories/GHSA-8436-99hf-9mmv",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "high",
+      "title": "undici vulnerable to cross-origin cache poisoning via missing origin isolation in interceptors",
+      "url": "https://github.com/advisories/GHSA-vp8m-p9jh-q5pm",
+      "vulnerable_versions": ">=8.10.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "undici",
+      "severity": "moderate",
+      "title": "undici vulnerable to Denial of Service via WebSocketStream unclean close",
+      "url": "https://github.com/advisories/GHSA-rx4f-c7p8-82vq",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2"
+    },
+    {
+      "module_name": "fast-uri",
+      "severity": "moderate",
+      "title": "fast-uri vulnerable to inconsistent host case normalization via percent-encoded octets",
+      "url": "https://github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+      "vulnerable_versions": ">=3.0.0 <3.1.8",
+      "patched_versions": ">=3.1.8"
+    },
+    {
+      "module_name": "brace-expansion",
+      "severity": "moderate",
+      "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+      "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "vulnerable_versions": ">=4.0.0 <5.0.12",
+      "patched_versions": ">=5.0.12"
+    },
+    {
+      "module_name": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "vulnerable_versions": ">=4.0.0 <5.0.11",
+      "patched_versions": ">=5.0.11"
+    },
+    {
+      "module_name": "brace-expansion",
+      "severity": "high",
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "vulnerable_versions": ">=4.0.0 <5.0.10",
+      "patched_versions": ">=5.0.10"
+    },
+    {
+      "module_name": "@fastify/busboy",
+      "severity": "high",
+      "title": "@fastify/busboy vulnerable to Denial of Service via prototype-named multipart part header",
+      "url": "https://github.com/advisories/GHSA-x8mw-p69m-v3mx",
+      "vulnerable_versions": ">=1.0.0 <3.2.1",
+      "patched_versions": ">=3.2.1"
+    },
+    {
+      "module_name": "smol-toml",
+      "severity": "moderate",
+      "title": "smol-toml: Quadratic-time parse() from parseKey rescanning to end of document on each key line",
+      "url": "https://github.com/advisories/GHSA-r4xh-jqrq-34v2",
+      "vulnerable_versions": "<=1.8.0",
+      "patched_versions": ">=1.9.0"
+    },
+    {
+      "module_name": "katex",
+      "severity": "low",
+      "title": "KaTeX: Existing prototype pollution can bypass trust restrictions",
+      "url": "https://github.com/advisories/GHSA-238p-pmpm-9mq7",
+      "vulnerable_versions": ">=0.11.0 <0.18.2",
+      "patched_versions": ">=0.18.2"
+    },
+    {
+      "module_name": "source-map-js",
+      "severity": "high",
+      "title": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+      "url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+      "vulnerable_versions": ">=1.0.0 <1.2.2",
+      "patched_versions": ">=1.2.2"
+    },
+    {
+      "module_name": "proxy-addr",
+      "severity": "critical",
+      "title": "proxy-addr vulnerable to IP spoofing via IPv4-mapped IPv6 trust subnet",
+      "url": "https://github.com/advisories/GHSA-jqcg-44mw-7w3h",
+      "vulnerable_versions": ">=1.1.0 <2.0.8",
+      "patched_versions": ">=2.0.8"
+    },
+    {
+      "module_name": "postcss-selector-parser",
+      "severity": "moderate",
+      "title": "PostCSS: Quadratic complexity in flat selector parsing allows CPU exhaustion",
+      "url": "https://github.com/advisories/GHSA-rj75-hqrm-r3gf",
+      "vulnerable_versions": "<7.1.6",
+      "patched_versions": ">=7.1.6"
+    },
+    {
+      "module_name": "fast-copy",
+      "severity": "moderate",
+      "title": "fast-copy: Stack exhaustion in fast-copy when copying deeply-nested values",
+      "url": "https://github.com/advisories/GHSA-jggr-w7fw-pc2j",
+      "vulnerable_versions": ">=4.0.0 <4.1.0",
+      "patched_versions": ">=4.1.0"
+    },
+    {
+      "module_name": "@fastify/busboy",
+      "severity": "moderate",
+      "title": "@fastify/busboy vulnerable to CRLF injection via multipart Content-Disposition filename and name",
+      "url": "https://github.com/advisories/GHSA-gxm5-99cw-xjw9",
+      "vulnerable_versions": "<3.2.2",
+      "patched_versions": ">=3.2.2"
+    },
+    {
+      "module_name": "sharp",
+      "severity": "high",
+      "title": "sharp : Vulnerability in librsvg dependency CVE-2026-96889",
+      "url": "https://github.com/advisories/GHSA-wq5f-xc86-pv6w",
+      "vulnerable_versions": "<0.35.5",
+      "patched_versions": ">=0.35.5"
+    }
+  ],
+  "validation": {
+    "evidence": "See report and CI; no full upstream product-suite claim"
+  }
 }
